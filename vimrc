@@ -150,6 +150,11 @@ if has("gui_running")
     elseif has("win16") || has("win32")
         au GUIEnter * simalt ~x
     endif
+
+    " Enable ligatures (MacVim only)
+    if has("gui_macvim")
+        set macligatures
+    endif
 else
     " Fix colors issue in console vim
     " see http://stackoverflow.com/questions/7278267/incorrect-colors-with-vim-in-iterm2-using-solarized
@@ -168,7 +173,7 @@ set ffs=unix,dos,mac
 
 " Set font according to system
 if has("mac") || has("macunix")
-    set gfn=Fira_Code:h14,Source\ Code\ Pro:h15,Menlo:h15
+    set gfn=Fira\ Code:h13,Source\ Code\ Pro:h13,Menlo:h13
 elseif has("win16") || has("win32") || has("win32unix")
     set gfn=Source\ Code\ Pro:h12
 elseif has("linux")
