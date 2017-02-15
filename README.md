@@ -4,6 +4,7 @@
 ```sh
 git clone https://github.com/royling/dotvim.git ~/.vim
 cd ~/.vim
+ln -s ~/.vim/vimrc ~/.vimrc
 git submodule update --init
 ```
 
