@@ -173,7 +173,7 @@ set ffs=unix,dos,mac
 
 " Set font according to system
 if has("mac") || has("macunix")
-    set gfn=Fira\ Code:h13,Source\ Code\ Pro:h13,Menlo:h13
+    set gfn=FuraCode\ Nerd\ Font:h13
 elseif has("win16") || has("win32") || has("win32unix")
     set gfn=Source\ Code\ Pro:h12
 elseif has("linux")
